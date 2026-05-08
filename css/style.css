@@ -157,12 +157,16 @@ body {
     row-gap: 3.2rem;
     align-items: stretch;
   }
+  .testimonial:nth-child(n) {
+    grid-column: auto;
+    grid-row: auto;
+  }
   .testimonial:nth-child(1) {
-    grid-column: span 2;
+    grid-column: 1 / span 2;
   }
   .testimonial:nth-child(3) {
     grid-row: 4;
-    grid-column: span 2;
+    grid-column: 1 / span 2;
   }
   .testimonial:nth-child(4) {
     grid-row: 2;
@@ -170,6 +174,7 @@ body {
   }
   .testimonial:nth-child(5) {
     grid-row: 3;
+    grid-column: 1 / span 2;
   }
 }
 @media (max-width: 25em) {
